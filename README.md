@@ -31,7 +31,7 @@ from keras.datasets import imdb
                                                      start_char=1,
                                                      oov_char=2,
                                                      index_from=3)
-                                                     ```
+```
 
 num_words: Top most frequent words to consider. This is useful if you don't want to consider very obscure words such as "Ultracrepidarian"
 
