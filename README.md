@@ -17,7 +17,7 @@ Then, the sentence is turned into a vector by simply concatenating these integer
 - "not": 3
 Then the sentence gets encoded as the vector ``` [5,8,21,3,5,8]. ```
 
-## Loading the data
+#### Loading the data
 
 The data comes preloaded in Keras, which means we don't need to open or read any files manually. The command to load it is the following, which will actually split the words into training and testing sets and labels!:
 
@@ -37,10 +37,10 @@ num_words: Top most frequent words to consider. This is useful if you don't want
 
 skip_top: Top words to ignore. This is useful if you don't want to consider the most common words. For example, the word "the" would add no information to the review, so we can skip it by setting skip_top to 2 or higher.
 
-Pre-processing the data
+#### Pre-processing the data
 
 In the notebook, we first prepare the data by one-hot encoding it into (0,1)-vectors as follows: If, for example, we have 10 words in our vocabulary, and the vector is (4,1,8), we'll turn it into the vector (1,0,0,1,0,0,0,1,0,0).
 
-### Building the model
+#### Building the model
 
 Build it, train it, and evaluate it! Check the ipynb for details
